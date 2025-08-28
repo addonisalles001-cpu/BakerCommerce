@@ -65,6 +65,7 @@
             this.txbEmail.Name = "txbEmail";
             this.txbEmail.Size = new System.Drawing.Size(168, 29);
             this.txbEmail.TabIndex = 2;
+            this.txbEmail.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txbEmail_KeyDown);
             // 
             // txbSenha
             // 
@@ -75,6 +76,7 @@
             this.txbSenha.PasswordChar = '♣';
             this.txbSenha.Size = new System.Drawing.Size(168, 29);
             this.txbSenha.TabIndex = 3;
+            this.txbSenha.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txbSenha_KeyDown);
             // 
             // btnEntrar
             // 
