@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,36 @@ namespace BakerCommerce
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+
+         
+        // Verificar se a pessoa digitou o email e senha:
+            if (txbEmail.Text.Length< 6)
+            {
+                MessageBox.Show("Digite um email válido!",
+                    "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error );
+            }
+            else if (txbSenha.Text.Length < 4)
+            {
+                MessageBox.Show("Digite um email válido!",
+                    "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                // Prosseguir...
+                Model.Usuario usuario = new Model.Usuario();
+
+                // Colocar os valores dos campos nos atributos do usuário:
+                usuario.Email =txbEmail.Text;
+                usuario.Senha =txbSenha.Text;
+            }
+
+
+
+
         }
     }
 }

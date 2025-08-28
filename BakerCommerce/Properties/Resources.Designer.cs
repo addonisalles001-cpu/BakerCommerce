@@ -103,6 +103,16 @@ namespace BakerCommerce.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pada1 {
+            get {
+                object obj = ResourceManager.GetObject("pada1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pao_de_queijo {
             get {
                 object obj = ResourceManager.GetObject("pao-de-queijo", resourceCulture);
@@ -116,6 +126,16 @@ namespace BakerCommerce.Properties {
         internal static System.Drawing.Bitmap pao_de_queijo1 {
             get {
                 object obj = ResourceManager.GetObject("pao-de-queijo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pastry_bag {
+            get {
+                object obj = ResourceManager.GetObject("pastry-bag", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
