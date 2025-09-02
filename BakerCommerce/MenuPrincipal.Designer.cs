@@ -82,6 +82,7 @@
             this.btnUsuarios.TabIndex = 3;
             this.btnUsuarios.Text = "Usuários";
             this.btnUsuarios.UseVisualStyleBackColor = false;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // lblPadarosa
             // 
