@@ -10,11 +10,30 @@ using System.Windows.Forms;
 
 namespace BakerCommerce
 {
+
     public partial class FormProdutos : Form
     {
-        public FormProdutos()
+        Model.Usuario usuario;
+        public FormProdutos(Model.Usuario usuario)
         {
             InitializeComponent();
+            this.usuario = usuario;
+            ListarCategoriasCmb();
+        }
+        public void ListarCategoriasCmb()
+        {
+            Model.Categoria categoria = new Model.Categoria();
+            // Tabela p/ receber o resultado do SELECT:
+            DataTable tabela = categoria.Listar();
+
+            foreach (DataRow dr in tabela.Rows)
+            {
+                cmbCategoriaCadastro.Items.Add($"{dr["id"]} - {dr["nome"]}");
+                cmbCategoriaEditar.Items.Add($"{dr["id"]} - {dr["nome"]}");
+            }
         }
     }
 }
+
+    
+
