@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvListaProdutos = new System.Windows.Forms.DataGridView();
             this.grbCadastrar = new System.Windows.Forms.GroupBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.cmbCategoriaCadastro = new System.Windows.Forms.ComboBox();
@@ -50,20 +50,21 @@
             this.lblDescricao = new System.Windows.Forms.Label();
             this.lblDescricaoGerenciamento = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListaProdutos)).BeginInit();
             this.grbCadastrar.SuspendLayout();
             this.grbEditar.SuspendLayout();
             this.grbApagar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvListaProdutos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(100, 116);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(614, 198);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvListaProdutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListaProdutos.Location = new System.Drawing.Point(100, 116);
+            this.dgvListaProdutos.Name = "dgvListaProdutos";
+            this.dgvListaProdutos.Size = new System.Drawing.Size(614, 198);
+            this.dgvListaProdutos.TabIndex = 0;
+            this.dgvListaProdutos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListaProdutos_CellClick);
             // 
             // grbCadastrar
             // 
@@ -89,6 +90,7 @@
             this.btnCadastrar.TabIndex = 6;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // cmbCategoriaCadastro
             // 
@@ -162,8 +164,9 @@
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(241, 38);
             this.btnEditar.TabIndex = 7;
-            this.btnEditar.Text = "Cadastrar";
+            this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // cmbCategoriaEditar
             // 
@@ -237,6 +240,7 @@
             this.btnApagar.TabIndex = 1;
             this.btnApagar.Text = "Apagar";
             this.btnApagar.UseVisualStyleBackColor = true;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
             // 
             // lblDescricao
             // 
@@ -277,10 +281,10 @@
             this.Controls.Add(this.grbApagar);
             this.Controls.Add(this.grbEditar);
             this.Controls.Add(this.grbCadastrar);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvListaProdutos);
             this.Name = "FormProdutos";
             this.Text = "FormProdutos";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListaProdutos)).EndInit();
             this.grbCadastrar.ResumeLayout(false);
             this.grbCadastrar.PerformLayout();
             this.grbEditar.ResumeLayout(false);
@@ -295,7 +299,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvListaProdutos;
         private System.Windows.Forms.GroupBox grbCadastrar;
         private System.Windows.Forms.ComboBox cmbCategoriaCadastro;
         private System.Windows.Forms.Label lblCategoriaCadastrar;

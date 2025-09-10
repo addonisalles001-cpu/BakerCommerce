@@ -65,7 +65,7 @@ namespace BakerCommerce.Model
         public bool Cadastrar()
         {
             string comando = "INSERT INTO usuarios (nome_completo, email, senha) VALUES " +
-                "(@nome_completo, @email, @senha)";
+                "(@nome_completo, @email, @senha,)";
             Banco conexaoBD = new Banco();
             MySqlConnection con = conexaoBD.ObterConexao();
             MySqlCommand cmd = new MySqlCommand(comando, con);
