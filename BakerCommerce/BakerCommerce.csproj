@@ -127,6 +127,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCaixa.resx">
+      <DependentUpon>FormCaixa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormComandas.resx">
       <DependentUpon>FormComandas.cs</DependentUpon>
     </EmbeddedResource>
@@ -192,6 +195,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\qr-code.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caixa Regitradora.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

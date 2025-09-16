@@ -47,7 +47,7 @@ namespace BakerCommerce
 
         private void btnCaixa_Click(object sender, EventArgs e)
         {
-            FormCaixa formCaixa = new FormCaixa(usuario); 
+            caixaBaker formCaixa = new caixaBaker(usuario); 
             formCaixa.ShowDialog();
         }
     }

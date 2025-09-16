@@ -35,6 +35,7 @@
             this.lblProduto = new System.Windows.Forms.Label();
             this.lblComanda = new System.Windows.Forms.Label();
             this.grbLancamento = new System.Windows.Forms.GroupBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.btnLancar = new System.Windows.Forms.Button();
             this.txbQuantidade = new System.Windows.Forms.TextBox();
             this.txbProduto = new System.Windows.Forms.TextBox();
@@ -43,7 +44,6 @@
             this.dgvProdutos = new System.Windows.Forms.DataGridView();
             this.lblDescricao = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.grbInformacoes.SuspendLayout();
             this.grbLancamento.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).BeginInit();
@@ -133,6 +133,17 @@
             this.grbLancamento.TabStop = false;
             this.grbLancamento.Text = "Lançamento";
             // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.Color.IndianRed;
+            this.btnCancelar.Location = new System.Drawing.Point(60, 210);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(202, 39);
+            this.btnCancelar.TabIndex = 9;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
             // btnLancar
             // 
             this.btnLancar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(147)))), ((int)(((byte)(117)))));
@@ -188,9 +199,9 @@
             // 
             this.dgvProdutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProdutos.GridColor = System.Drawing.SystemColors.ControlLight;
-            this.dgvProdutos.Location = new System.Drawing.Point(393, 117);
+            this.dgvProdutos.Location = new System.Drawing.Point(393, 107);
             this.dgvProdutos.Name = "dgvProdutos";
-            this.dgvProdutos.Size = new System.Drawing.Size(385, 436);
+            this.dgvProdutos.Size = new System.Drawing.Size(385, 501);
             this.dgvProdutos.TabIndex = 6;
             this.dgvProdutos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProdutos_CellClick);
             // 
@@ -213,17 +224,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.BackColor = System.Drawing.Color.IndianRed;
-            this.btnCancelar.Location = new System.Drawing.Point(60, 210);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(202, 39);
-            this.btnCancelar.TabIndex = 9;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = false;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // FormComandas
             // 
